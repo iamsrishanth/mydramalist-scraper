@@ -8,7 +8,7 @@ async function search(query) {
     const searchUrl = `${baseUrl}/search?q=${encodeURIComponent(query)}`;
     const { data } = await axios.get(searchUrl, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36'
       }
     });
     const $ = cheerio.load(data);
